@@ -112,7 +112,7 @@ class Client {
         
                         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
               
-                        xhr.send("login="+encodeURIComponent(login)+"&pass="+encodeURIComponent(pass)+"&alias"+encodeURIComponent(alias));
+                        xhr.send("login="+encodeURIComponent(login)+"&pass="+encodeURIComponent(pass)+"&alias="+encodeURIComponent(alias));
                     } else {
                         document.getElementsByClassName('alias-field')[0].focus();
                         document.getElementsByClassName('error-log')[0].innerHTML = "Alias length is incorrect! Please, try again!";
